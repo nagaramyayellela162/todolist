@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const mongoose=require("mongoose");
 
 const app = express();
-mongoose.connect("mongodb+srv://ramyasrinivas162:ram123@cluster0.jeouuec.mongodb.net/?retryWrites=true&w=majority/itemsDB");
+mongoose.connect("MONGO_CONNECTION");
 mongoose.set('strictQuery',false);
 
 app.set('view engine', 'ejs');
