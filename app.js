@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const mongoose=require("mongoose");
 
 const app = express();
-mongoose.connect("MONGO_CONNECTION");
+mongoose.connect(MONGO_CONNECTION);
 mongoose.set('strictQuery',false);
 
 app.set('view engine', 'ejs');
